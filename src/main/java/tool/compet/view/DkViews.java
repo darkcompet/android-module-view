@@ -114,6 +114,11 @@ public class DkViews {
 		tv.setTypeface(Typeface.createFromAsset(context.getAssets(), "fonts/customFont"));
 	}
 
+	/**
+	 * @param bounds For eg,. this.textPaint.getTextBounds(text, 0, text.length, bounds)
+	 * @param cx x-axis position which the text will be drawn
+	 * @param cy y-axis position which the text will be drawn
+	 */
 	public static float[] calcTextViewDrawPoint(Rect bounds, float cx, float cy) {
 		float halfWidth = (bounds.right - bounds.left) / 2f;
 		float halfHeight = (bounds.bottom - bounds.top) / 2f;
